@@ -1,0 +1,140 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	
+}
+
+html, body {
+	background-color: rgb(51, 153, 255);
+	background-image: url(../image/bg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left bottom;
+}
+
+#form_nhap {
+	position: relative;
+	background-color: #e2f0ff;
+	width: 1025px;
+	height: max-content;
+	padding: 50px;
+	border: none;
+	border-radius: 20px;
+	vertical-align: center;
+	margin: 50px auto;
+	box-shadow: 10px 10px 10px #00000060;
+}
+
+#form_nhap > h1 {
+	margin: 50px;
+}
+
+#form_nhap > form > .inputbox:nth-child(2n - 1) {
+	margin-right: 20px;
+}
+
+.inputbox {
+	position: relative;
+	width: 500px;
+	height: 50px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.inputbox > input,
+.inputbox > select,
+#preview-image-box {
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
+	padding-left: 20px;
+	border: 3px solid #999;
+	border-radius: 10px;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: #e2f0ff;
+	outline: none;
+}
+
+.inputbox > input:focus,
+.inputbox > select:focus {
+	border-color: #3399ff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+select {
+	-webkit-appearance: none;
+}
+
+.inputbox > span, 
+#preview-image-box > span {
+	pointer-events: none;
+	position: absolute;
+	margin: 0 0 0 10px;
+	padding: 0 5px 0 5px;
+	top: 17px;
+	left: 5px;
+	display: inline-block;
+	font-size: 16px;
+	height: 16px;
+	transition: 0.2s ease all;
+	color: #999;
+	background-color: #e2f0ff;
+	user-select: none;
+}
+
+.inputbox > input:focus ~ span, 
+.inputbox > .floatting-label,
+#preview-image-box > .floatting-label {
+	font-size: 14px;
+	height: 14px;
+	top: -8px;
+	background-color: #e2f0ff;
+}
+
+.inputbox > input:focus ~ span,
+.inputbox > select:focus ~ span {
+	color: #3399ff;
+}
+
+.floatting-label {
+	color: black;
+}
+
+#preview-image-box {
+	display: none;
+	width: 100%;
+	margin-bottom: 50px;
+	padding: 0 !important;
+	position: relative;
+}
+
+#preview-image-box > img {
+	width: 100%;
+	padding: 20px;
+	border-radius: 30px;
+	box-sizing: border-box;
+	
+}
+
+.button-group > input {
+	width: fit-content;
+	height: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-right: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #3399ff;
+	color: white;
+	border-radius: 10px;
+	border: 3px solid #297acc;
+	box-sizing: border-box;
+}
+
+.button-group > input:last-child {
+	margin-right: 0;
+}
